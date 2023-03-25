@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "972843230573",
+    "project_id": "aabbir-df297",
+    "storage_bucket": "aabbir-df297.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972843230573:android:cb632fedf2589dec8de664",
+        "android_client_info": {
+          "package_name": "com.example.untitled2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972843230573-97dlt6rm0uafb22vnquo73kde0r0vm00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvn83myWE9vTIv0nyMzF5aWx-r1vfaJZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972843230573-97dlt6rm0uafb22vnquo73kde0r0vm00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
