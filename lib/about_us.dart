@@ -20,7 +20,7 @@ class _About extends State<About> {
         backgroundColor: Colors.blueAccent[100],
         body: Stack(children: [
           Positioned(
-            top: 20,
+            top: 30,
             right: 20,
             child: Center(
               child: Row(
@@ -84,15 +84,15 @@ class _About extends State<About> {
             right: 0,
             left: 20,
             child: Container(
-              height: 65,
-              width: 65,
+              height: 75,
+              width: 75,
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('lib/assets/Logo.png'))),
             ),
           ),
           Positioned(
-            top: 290,
+            top: 310,
             right: 20,
             child: Center(
               child: Row(
@@ -101,10 +101,10 @@ class _About extends State<About> {
                     ":عَـبِّـر",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 45.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.red,
-                      fontFamily: 'DGShamael',
+                      color: Color.fromARGB(255, 5, 57, 147),
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
@@ -112,7 +112,7 @@ class _About extends State<About> {
             ),
           ),
           Positioned(
-            top: 350,
+            top: 370,
             right: 15,
             child: Center(
               child: Row(
@@ -121,10 +121,10 @@ class _About extends State<About> {
                     "هو نظام اتصال معزز وبديل متاح بدون تكاليف \n\اضافية ، و يمكن استخدامه بشكل مجاني.\n\ يركز تطبيقنا على توجيه ودعم أولئك الاشخاص \n\  العازمين على دخول عالم الاتصالات المعززة والبديلة. \n\ \n\  يدعم اللغة العربية.",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 27.0,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
-                      fontFamily: 'DGShamael',
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
