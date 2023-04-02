@@ -45,7 +45,7 @@ class _policy extends State<policy> {
             ),
           ),
           Positioned(
-            top: 120,
+            top: 110,
             right: 100,
             child: Center(
               child: Row(
@@ -81,15 +81,15 @@ class _policy extends State<policy> {
             ),
           ),
           Positioned(
-            top: 220,
+            top: 215,
             right: 0,
-            left: 13,
+            left: 20,
             child: Container(
               height: 65,
               width: 65,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('lib/assets/cliparts/Logo.png'))),
+                      image: AssetImage('lib/assets/Logo.png'))),
             ),
           ),
           /*Positioned(
@@ -113,9 +113,9 @@ class _policy extends State<policy> {
                     ":التزامنا بمراعاة خصوصيتك",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 20.0,
-                      color: Color(0xff930303),
-                      fontFamily: 'DGShamael',
+                      fontSize: 25.0,
+                      color: Color.fromARGB(255, 5, 57, 147),
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
@@ -132,9 +132,9 @@ class _policy extends State<policy> {
                     ".إننا نهتم بشكل كبير بخصوصية زوار برنامجنا، ونتعهد بحمايتها \n\ .تشرح هذه السياسة كيفية التصرف في معلوماتك الشخصية ",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 15.0,
+                      fontSize: 19.0,
                       color: Colors.black,
-                      fontFamily: 'DGShamael',
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
@@ -151,9 +151,9 @@ class _policy extends State<policy> {
                     "بموافقتك على استخدامنا لملفات تعريف الارتباط وفقًا لبنود هذه السياسة \n\  فإنك تسمح لنا باستخدام ملفات تعريف الارتباط في كل مرة تزور فيها \n\  .البرنامج",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 15.0,
+                      fontSize: 19.0,
                       color: Colors.black,
-                      fontFamily: 'DGShamael',
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
@@ -170,9 +170,9 @@ class _policy extends State<policy> {
                     "تنطبق سياسة حماية الخصوصية المعتمدة من قبلنا على كل المعلومات\n\  الشخصية التي يتم جمعها من قبلنا أو يتم تقديمها لنا، ومن خلال تقديمكم\n\ المعلومات الشخصية لنا، توافقون على أحكام وشروط هذه السياسة.",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 15.0,
+                      fontSize: 19.0,
                       color: Colors.black,
-                      fontFamily: 'DGShamael',
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
@@ -189,10 +189,10 @@ class _policy extends State<policy> {
                     ":المعلومات الشخصية  ",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 15.0,
+                      fontSize: 25.0,
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'DGShamael',
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
@@ -209,9 +209,9 @@ class _policy extends State<policy> {
                     "المعلومات الشخصية التي يتم تجميعها هي المعلومات التي تعرّف عنكم \n\كأفراد، وتشمل : الاسم، اسم المستخدم، البريد الالكتروني،رقم الهاتف،\n\   معلومات حول المتصفّح والجهاز، المعلومات التي يتم جمعها من خلال\n\ ملفات تعريف الارتباط وبيانات البيكسل الإضافية والتقنيات الأخرى. ",
                     textAlign: TextAlign.right,
                     style: const TextStyle(
-                      fontSize: 15.0,
+                      fontSize: 19.0,
                       color: Colors.black,
-                      fontFamily: 'DGShamael',
+                      fontFamily: 'IndieFlower',
                     ),
                   ),
                 ],
