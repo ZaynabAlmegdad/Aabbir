@@ -1,224 +1,281 @@
 import 'package:flutter/material.dart';
 import 'package:untitled2/Dashboard/dashboard.dart';
 
-
 void main() => runApp(const MaterialApp(
-  home: policy(),
+  home: profile(),
 ));
 
-class policy extends StatefulWidget {
-  const policy({Key? key}) : super(key: key);
+class profile extends StatefulWidget {
+  const profile({Key? key}) : super(key: key);
 
   @override
-  State<policy> createState() => _policy();
+  State<profile> createState() => _profile();
 }
 
-class _policy extends State<policy> {
+class _profile extends State<profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueAccent[100],
-      body: Stack(
-        children: [
-          Positioned(
-            top: 30,
-            right: 20,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Container(
-                          child: FloatingActionButton.small(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const Dashboard()),
-                              );
-                            },
-                            backgroundColor: Colors.blue[100],
-                            child: const Icon(Icons.arrow_forward_ios),
-                          ))),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            top: 120,
-            right: 100,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    "سياسة الخصوصية",
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 30.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontFamily: 'DGShamael',
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            top: 190,
-            child: Column(
-              children: [
-                Container(
-                    height: 700,
-                    width: MediaQuery.of(context).size.width - 0,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(40),
-                      ),
-                    )),
+      body: Stack(children: [
+        Positioned(
+          top: 20,
+          right: 20,
+          child: Center(
+            child: Row(
+              children: <Widget>[
+                Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Container(
+                        child: FloatingActionButton.small(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Dashboard()),
+                            );
+                          },
+                          backgroundColor: Colors.blue[100],
+                          child: const Icon(Icons.arrow_forward_ios),
+                        ))),
               ],
             ),
           ),
-          Positioned(
-            top: 220,
-            right: 0,
-            left: 13,
-            child: Container(
-              height: 65,
-              width: 65,
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('lib/assets/cliparts/Logo.png'))),
+        ),
+
+        Positioned(
+          top: 85,
+          right: 93,
+          child: Center(
+            child: Row(
+              children: <Widget>[
+                Text(
+                  "المـلـف الشـخـصـي",
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontFamily: 'DGShamael',
+                  ),
+                ),
+              ],
             ),
           ),
-          /*Positioned(
-            top: 305,
-            right: 10,
-            child: Container(
-              height: 28,
-              width: 28,
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('lib/assests/pol.jpg'))),
-            ),
-          ),*/
-          Positioned(
-            top: 290,
-            right: 30,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    ":التزامنا بمراعاة خصوصيتك",
-                    textAlign: TextAlign.right,
-                    style: const TextStyle(
-                      fontSize: 20.0,
-                      color: Color(0xff930303),
-                      fontFamily: 'DGShamael',
-                    ),
-                  ),
-                ],
+        ),
+        Positioned(
+          top: 160,
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 25),
+            height: 800,
+            width: MediaQuery.of(context).size.width - 0,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.all(
+                Radius.circular(40),
               ),
             ),
-          ),
-          Positioned(
-            top: 340,
-            right: 30,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    ".إننا نهتم بشكل كبير بخصوصية زوار برنامجنا، ونتعهد بحمايتها \n\ .تشرح هذه السياسة كيفية التصرف في معلوماتك الشخصية ",
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: <Widget>[
+
+                SizedBox(height: 60.0,),
+                Row(
+                    children:[
+                      SizedBox(height: 50.0, width: 150.0,
+                        child: TextFormField (
+                          textAlign: TextAlign.right,
+                          decoration: InputDecoration(
+                            enabled: true,
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius:BorderRadius.circular(6.0),
+                                borderSide: BorderSide(color: Colors.grey,
+                                    width: 2)
+                            ),
+                            hintText: 'الاسم الأخير',
+                            hintStyle: TextStyle(fontFamily: 'DGShamael',
+                                fontSize: 18,
+                                color: Colors.black87,
+                                fontWeight: FontWeight.normal),
+                          ),
+                        ),
+                      ),
+                      Spacer(),
+                      SizedBox(height: 20.0),
+                      SizedBox(
+                        height: 50.0, width: 150.0,
+                        child: TextFormField (
+                          textAlign: TextAlign.right,
+                          decoration: InputDecoration(
+                            enabled: true,
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius:BorderRadius.circular(6.0),
+                                borderSide: BorderSide(color: Colors.grey,
+                                    width: 2)
+                            ),
+                            hintText: 'الاسم الأول',
+                            hintStyle: TextStyle(fontFamily: 'DGShamael',
+                                fontSize: 18,
+                                color: Colors.black87,
+                                fontWeight: FontWeight.normal),
+
+                          ),
+                        ),
+                      ),
+                    ]),
+                SizedBox(height: 40.0),
+                SizedBox(
+                  height: 50.0, width: 370.0,
+                  child: TextFormField (
                     textAlign: TextAlign.right,
-                    style: const TextStyle(
-                      fontSize: 15.0,
-                      color: Colors.black,
-                      fontFamily: 'DGShamael',
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.email, color: Colors.black87,),
+                      enabled: true,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius:BorderRadius.circular(6.0),
+                          borderSide: BorderSide(color: Colors.grey,
+                              width: 2)
+                      ),
+                      hintText: 'البريد الالكتروني',
+                      hintStyle: TextStyle(fontFamily: 'DGShamael',
+                          fontSize: 18,
+                          color: Colors.black87,
+                          fontWeight: FontWeight.normal),
+
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            top: 405,
-            right:30,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    "بموافقتك على استخدامنا لملفات تعريف الارتباط وفقًا لبنود هذه السياسة \n\  فإنك تسمح لنا باستخدام ملفات تعريف الارتباط في كل مرة تزور فيها \n\  .البرنامج",
+                ),
+                SizedBox(height: 40.0),
+                SizedBox(
+                  height: 50.0, width: 370.0,
+                  child: TextFormField (
                     textAlign: TextAlign.right,
-                    style: const TextStyle(
-                      fontSize: 15.0,
-                      color: Colors.black,
-                      fontFamily: 'DGShamael',
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.call,color: Colors.black87),
+                      enabled: true,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius:BorderRadius.circular(6.0),
+                          borderSide: BorderSide(color: Colors.grey,
+                              width: 2)
+                      ),
+                      hintText: 'رقم الهاتف',
+                      hintStyle: TextStyle(fontFamily: 'DGShamael',
+                          fontSize: 18,
+                          color: Colors.black87,
+                          fontWeight: FontWeight.normal),
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            top: 490,
-            right: 30,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    "تنطبق سياسة حماية الخصوصية المعتمدة من قبلنا على كل المعلومات\n\  الشخصية التي يتم جمعها من قبلنا أو يتم تقديمها لنا، ومن خلال تقديمكم\n\ المعلومات الشخصية لنا، توافقون على أحكام وشروط هذه السياسة.",
+                ),
+                SizedBox(height: 40.0),
+                SizedBox(
+                  height: 50.0, width: 370.0,
+                  child: TextFormField (
                     textAlign: TextAlign.right,
-                    style: const TextStyle(
-                      fontSize: 15.0,
-                      color: Colors.black,
-                      fontFamily: 'DGShamael',
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.female_sharp,color: Colors.black87),
+                      enabled: true,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius:BorderRadius.circular(6.0),
+                          borderSide: BorderSide(color: Colors.grey,
+                              width: 2)
+                      ),
+                      hintText: 'الجنس',
+                      hintStyle: TextStyle(fontFamily: 'DGShamael',
+                          fontSize: 18,
+                          color: Colors.black87,
+                          fontWeight: FontWeight.normal),
+
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            bottom: 220,
-            right: 30,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    ":المعلومات الشخصية  ",
+                ),
+                SizedBox(height: 40.0),
+                SizedBox(
+                  height: 50.0, width: 370.0,
+                  child: TextFormField (
                     textAlign: TextAlign.right,
-                    style: const TextStyle(
-                      fontSize: 15.0,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'DGShamael',
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.location_on,color: Colors.black87),
+                      enabled: true,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius:BorderRadius.circular(6.0),
+                          borderSide: BorderSide(color: Colors.grey,
+                              width: 2)
+                      ),
+                      hintText: 'الدولـة',
+                      hintStyle: TextStyle(fontFamily: 'DGShamael',
+                          fontSize: 18,
+                          color: Colors.black87,
+                          fontWeight: FontWeight.normal),
+
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            bottom: 100,
-            right:30,
-            child: Center(
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    "المعلومات الشخصية التي يتم تجميعها هي المعلومات التي تعرّف عنكم \n\كأفراد، وتشمل : الاسم، اسم المستخدم، البريد الالكتروني،رقم الهاتف،\n\   معلومات حول المتصفّح والجهاز، المعلومات التي يتم جمعها من خلال\n\ ملفات تعريف الارتباط وبيانات البيكسل الإضافية والتقنيات الأخرى. ",
-                    textAlign: TextAlign.right,
-                    style: const TextStyle(
-                      fontSize: 15.0,
-                      color: Colors.black,
-                      fontFamily: 'DGShamael',
+                ),
+                SizedBox(height: 20.0),
+                Column(
+                  children: [
+                    Divider(color: Colors.black,thickness: 1.7,height:30,)// black line
+                  ],
+                ),
+                SizedBox(height: 20.0),
+                Row(
+                  children:[
+                    SizedBox(
+                        height: 50.0, width: 150.0,
+                        child: ElevatedButton(onPressed:(){},// reset password page
+                            child: Text("تغيير كلمة المرور",
+                                style: TextStyle(
+                                    fontFamily: 'DGShamael',
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.normal))
+                        )
                     ),
-                  ),
-                ],
-              ),
+                    Spacer(),
+                    SizedBox(
+                      height: 50.0, width:180.0,
+                      child: TextFormField (
+                        textAlign: TextAlign.right,
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.password_sharp,color: Colors.black87),
+                          enabled: true,
+                          enabledBorder: OutlineInputBorder(
+                              borderRadius:BorderRadius.circular(6.0),
+                              borderSide: BorderSide(color: Colors.grey,
+                                  width: 2)
+                          ),
+                          hintText: '***********',
+                          hintStyle: TextStyle(fontFamily: 'DGShamael',
+                              fontSize: 18,
+                              color: Colors.black87,
+                              fontWeight: FontWeight.normal),
+
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 35.0),
+                SizedBox(
+                    height: 50.0, width: 370.0,
+                    child: ElevatedButton(
+                      onPressed:(){}, //save changes
+                      child: Text("حفظ التغييرات",
+                          style: TextStyle(
+                              fontFamily: 'DGShamael',
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.normal)),
+
+
+
+                    )
+                ),
+              ],
             ),
           ),
-        ],
+        ),
+      ],
       ),
     );
   }
