@@ -100,7 +100,7 @@ class _ResetPassState extends State<ResetPass> {
                       textAlign: TextAlign.end,
                       style:
                      TextStyle(
-                        fontFamily: 'Aabbir font',
+                        fontFamily: 'DGShamael',
                         fontWeight: FontWeight.normal,
                       //  useGoogleFonts: false,
                       ),
@@ -118,7 +118,7 @@ class _ResetPassState extends State<ResetPass> {
                       textAlign: TextAlign.end,
                       style:
                      TextStyle(
-                        fontFamily: 'Aabbir font',
+                        fontFamily: 'DGShamael',
                       //  useGoogleFonts: false,
                       ),
                     ),
@@ -135,7 +135,7 @@ class _ResetPassState extends State<ResetPass> {
                       textAlign: TextAlign.end,
                       style:
                       TextStyle(
-                        fontFamily: 'Aabbir font',
+                        fontFamily: 'DGShamael',
                        // useGoogleFonts: false,
                       ),
                     ),
@@ -204,7 +204,7 @@ class _ResetPassState extends State<ResetPass> {
                         ),
 
                         textStyle: const TextStyle(
-                           fontFamily: 'Aabbir font',
+                           fontFamily: 'DGShamael',
                            fontWeight: FontWeight.bold ,
                            fontSize: 16,
                       //     useGoogleFonts: false,

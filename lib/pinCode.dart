@@ -34,7 +34,7 @@ class _PinCodeState extends State<PinCode>{
                 'نحتاج للتأكد من هويتك.. تفقد هاتفك',
                 textAlign: TextAlign.end,
                 style: TextStyle(
-                  fontFamily: 'Aabbir font',
+                  fontFamily: 'DGShamael',
                  fontWeight: FontWeight.bold,
                  // useGoogleFonts: false,
                 ),
@@ -46,7 +46,7 @@ class _PinCodeState extends State<PinCode>{
               child: Text(
                 'ادخل الرمز المُرسل عبر رقم هاتفك..',
                 style: TextStyle(
-                  fontFamily: 'Aabbir font',
+                  fontFamily: 'DGShamael',
                 //  useGoogleFonts: false,
                 ),
               ),
@@ -57,7 +57,7 @@ class _PinCodeState extends State<PinCode>{
               child: Text(
                 '+966 ** *** *** **08',
                 style: TextStyle(
-                  fontFamily: 'Aabbir font',
+                  fontFamily: 'DGShamael',
                   //useGoogleFonts: false,
                 ),
               ),
@@ -170,7 +170,7 @@ class _PinCodeState extends State<PinCode>{
                   ),
 
                   textStyle: const TextStyle(
-                    fontFamily: 'Aabbir font',
+                    fontFamily: 'DGShamael',
                     fontWeight: FontWeight.bold ,
                     fontSize: 16,
                     //     useGoogleFonts: false,
@@ -184,7 +184,7 @@ class _PinCodeState extends State<PinCode>{
                   title: Text('تم اعادة تعيين كلمة مرورك ',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontFamily: 'Aabbir font',
+                      fontFamily: 'DGShamael',
                       fontWeight: FontWeight.bold,
                       // useGoogleFonts: false,
                     ),
@@ -192,7 +192,7 @@ class _PinCodeState extends State<PinCode>{
                   content:  Text('تم اعادة تعيين كلمة مرورك بنجاح',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontFamily: 'Aabbir font',
+                      fontFamily: 'DGShamael',
                       fontWeight: FontWeight.normal,
                       // useGoogleFonts: false,
                     ),
@@ -213,7 +213,7 @@ class _PinCodeState extends State<PinCode>{
                         ),
 
                         textStyle: const TextStyle(
-                          fontFamily: 'Aabbir font',
+                          fontFamily: 'DGShamael',
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
                           //     useGoogleFonts: false,
