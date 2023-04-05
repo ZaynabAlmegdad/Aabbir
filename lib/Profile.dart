@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled2/Dashboard/dashboard.dart';
+import 'package:untitled2/dashboard.dart';
 
 void main() => runApp(const MaterialApp(
   home: profile(),
