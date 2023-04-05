@@ -10,6 +10,7 @@ import 'package:untitled2/widget/buttons.dart';
 import 'package:untitled2/widget/dialog/add_word.dart';
 import 'package:untitled2/widget/word_items.dart';
 
+
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
 
@@ -229,6 +230,7 @@ child:*/
                                                 padding: EdgeInsets.only(
                                                   right:!(index==(fitHorz-1))?horzSpacing:0,),
                                                 child: Container(width: conWidth,
+                                                  //categories columns
                                                   child: Column(
                                                       children: List.generate(wordslength,
                                                               (colIndex) {
@@ -331,10 +333,13 @@ child:*/
     }
   }
 
+
   void reset(){
-    unselectCategory();
-    unEdit();
-    resetCategoryScroll();
+    if(typedWords.isEmpty){
+      setState(() {
+        typedWords.removeLast();
+      });
+    }
   }
 
   void unselectCategory(){
