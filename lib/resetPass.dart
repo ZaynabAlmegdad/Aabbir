@@ -32,6 +32,7 @@ class _ResetPassState extends State<ResetPass> {
           Padding(
           padding: const EdgeInsets.all(10),
             child: Container(
+                alignment: AlignmentDirectional(0.88, -0.95),
                 child:  FloatingActionButton.small(
                   onPressed: () {
                     Navigator.push(
